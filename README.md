@@ -164,6 +164,23 @@ After the timer expires:
 
 ---
 
+
+## Results
+
+| Scenario | Detection Rate |
+|----------|---------------|
+| No Defense | Low — attacks propagate freely |
+| Firewall Only | Moderate — blocks attacks at entry |
+| IDS Only | Moderate — detects attacks but does not directly prevent them |
+| Firewall + IDS Combined | 85%+ detection with significantly fewer successful breaches |
+
+### Key Observations
+
+| Attack Pattern | Description |
+|---------------|-------------|
+| Threat Level Anomalies | Sudden increases in network threat scores indicating malicious activity |
+| Repeated Attack Detection | Multiple attacks originating from the same attacker were successfully identified |
+| Worm Propagation Clustering | Infection spread through connected nodes, creating observable attack clusters |
 ## Technologies Used
 
 * NetLogo 7.0.4
